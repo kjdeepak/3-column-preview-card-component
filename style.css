@@ -54,7 +54,7 @@ body {
     font-weight: 700;
 }
 
-.card>p {
+.card__body>p {
     color: var(--transparent-white);
     margin-bottom: 32px;
     line-height: 1.4;
@@ -128,16 +128,31 @@ body {
         border-radius: 0 8px 8px 0;
     }
 
-    .card>h1{
+    .card>h1 {
         margin-bottom: 32px;
     }
-    .card>p{
-        margin-bottom: 80px;
+
+    .card__body {
+        display: flex;
+        flex-direction: column;
+        height: 60%;
+    }
+
+    .card__body>.button {
+        margin-top: auto;
+        width: max-content
     }
 }
 
 @media screen and (min-width: 1440px) {
     .card-container {
         margin: auto 17.5%;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .card-container {
+        margin: auto 33%;
+        flex-basis: 40%;
     }
 }
