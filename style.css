@@ -32,10 +32,10 @@ body {
 }
 
 .card-container {
-    margin: auto;
     padding-left: 16px;
     padding-right: 16px;
     border-radius: 18px;
+    margin: 3%;
 }
 
 .card {
@@ -111,4 +111,33 @@ body {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1024px) {
+    .card-container {
+        display: flex;
+        flex-basis: 60%;
+        margin: auto 10%;
+    }
+
+    .card-one {
+        border-radius: 8px 0 0 8px;
+    }
+
+    .card-three {
+        border-radius: 0 8px 8px 0;
+    }
+
+    .card>h1{
+        margin-bottom: 32px;
+    }
+    .card>p{
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .card-container {
+        margin: auto 17.5%;
+    }
 }
