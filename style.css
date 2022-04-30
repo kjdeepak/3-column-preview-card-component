@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: var(--very-light-gray);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.card-container {
+    margin: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 18px;
+}
+
+.card {
+    padding: 48px;
+}
+
+.card>img {
+    margin-bottom: 24px;
+}
+
+.card>h1 {
+    color: var(--very-light-gray);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+}
+
+.card>p {
+    color: var(--transparent-white);
+    margin-bottom: 32px;
+    line-height: 1.4;
+}
+
+.card-one {
+    background-color: var(--bright-orange);
+    border-radius: 8px 8px 0 0;
+}
+
+.card-two {
+    background-color: var(--dark-cyan);
+}
+
+.card-three {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 0 8px 8px;
+}
+
+.button {
+    background: none;
+    color: inherit;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    border-radius: 33px;
+    padding: 16px 24px;
+    background-color: var(--very-light-gray);
+}
+
+.button:hover {
+    background-color: transparent;
+    color: var(--very-light-gray);
+    outline: 2px solid var(--very-light-gray);
+}
+
+.button-one {
+    color: var(--bright-orange);
+}
+
+.button-two {
+    color: var(--dark-cyan);
+}
+
+.button-three {
+    color: var(--very-dark-cyan);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
